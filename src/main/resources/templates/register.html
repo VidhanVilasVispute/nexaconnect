@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en" th:replace="~{base :: parent(~{::#content},~{::title},~{})}">
+  <head>
+    <title>Register Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body
+    class="bg-gray-100 dark:bg-gray-900 flex items-center justify-center min-h-screen"
+  >
+    <div id="content" class="w-full max-w-md mx-auto">
+      <div
+        class="p-4 bg-white border border-gray-200 rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700"
+      >
+        <!-- Page Title -->
+        <h2
+          class="text-4xl font-bold text-gray-900 dark:text-white text-center mb-4"
+        >
+          Create Your Account
+        </h2>
+
+       
+
+        <form
+          th:action="@{/do-register}"
+          method="post"
+          th:object="${userForm}"
+          id="signupForm"
+          novalidate
+         
+          
+        >
+          <!-- Username -->
+          <div class="mb-4">
+            <label
+              for="name"
+              class="block text-sm font-medium text-gray-700 dark:text-gray-300"
+              >Username</label
+            >
+            <input
+              type="text"
+              th:field="*{name}"
+              id="name"
+              name="username"
+              required
+              placeholder="Enter your name"
+              class="mt-1 block w-full px-3 py-2 border rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:text-white"
+    
+            />
+            <p 
+            th:if="${#fields.hasErrors('name')}"
+            th:errors="*{name}"
+            class="text-red-600" >User is required</p>
+            
+            
+
+          </div>
+
+          <!-- Email -->
+          <div class="mb-4">
+            <label
+              for="email"
+              class="block text-sm font-medium text-gray-700 dark:text-gray-300"
+              >Email</label
+            >
+            <input
+              type="email"
+              th:field="*{email}"
+              id="email"
+              name="email"
+              required
+              placeholder="Enter your email"
+              class="mt-1 block w-full px-3 py-2 border rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:text-white"
+            />
+            <p 
+            th:if="${#fields.hasErrors('email')}"
+            th:errors="*{email}"
+            class="text-red-600" >Email is required</p>
+          </div>
+
+          <!-- Password -->
+          <div class="mb-4">
+            <label
+              for="password"
+              class="block text-sm font-medium text-gray-700 dark:text-gray-300"
+              >Password</label
+            >
+            <input
+              type="password"
+              th:field="*{password}"
+              id="password"
+              name="password"
+              required
+              placeholder="Enter your password"
+              class="mt-1 block w-full px-3 py-2 border rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:text-white"
+            />
+            <p 
+            th:if="${#fields.hasErrors('password')}"
+            th:errors="*{password}"
+            class="text-red-600" >password is required</p>
+          </div>
+
+          <!-- Contact -->
+          <div class="mb-4">
+            <label
+              for="contact"
+              class="block text-sm font-medium text-gray-700 dark:text-gray-300"
+              >Contact</label
+            >
+            <input
+              type="text"
+              th:field="*{phoneNumber}"
+              id="contact"
+              name="contact"
+              required
+              placeholder="Enter your contact"
+              class="mt-1 block w-full px-3 py-2 border rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:text-white"
+            />
+            <p 
+            th:if="${#fields.hasErrors('phoneNumber')}"
+            th:errors="*{phoneNumber}"
+            class="text-red-600" >phoneNumber is required</p>
+          </div>
+
+          <!-- About -->
+          <div class="mb-4">
+            <label
+              for="about"
+              class="block text-sm font-medium text-gray-700 dark:text-gray-300"
+              >About You</label
+            >
+            <textarea
+              th:field="*{about}"
+              id="about"
+              name="about"
+              rows="3"
+              placeholder="Enter your info..."
+              class="mt-1 block w-full px-3 py-2 border rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:text-white"
+            ></textarea>
+          </div>
+
+          <!-- Submit & Reset Buttons -->
+          <div class="flex gap-4">
+            <button
+              type="submit"
+              class="px-4 py-2 text-white bg-blue-600 rounded-md hover:bg-blue-700 focus:ring-2 focus:ring-blue-500 focus:outline-none"
+            >
+              Register
+            </button>
+
+            <h6>- Quick logins are available -</h6>
+
+            <button
+              type="reset"
+              class="px-4 py-2 text-white bg-gray-600 rounded-md hover:bg-gray-700 focus:ring-2 focus:ring-gray-500 focus:outline-none"
+            >
+              Reset
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <!-- Auto-hide Messages after 5 Seconds -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        setTimeout(() => {
+          let errorAlert = document.getElementById("errorAlert");
+          let successAlert = document.getElementById("successAlert");
+
+          if (errorAlert) {
+            errorAlert.style.display = "none";
+          }
+          if (successAlert) {
+            successAlert.style.display = "none";
+          }
+        }, 5000);
+      });
+    </script>
+  </body>
+</html>

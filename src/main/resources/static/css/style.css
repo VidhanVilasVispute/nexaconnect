@@ -1,0 +1,17 @@
+/* Default light mode styles */
+body {
+    background-color: white;
+    color: black;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Dark mode styles */
+.dark body {
+    background-color: black;
+    color: white;
+}
+
+/* Prevent transition on page load */
+html:not([data-loaded]) * {
+    transition: none !important;
+}

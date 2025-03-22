@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en" th:replace="~{base :: parent(~{::#content},~{::title},~{})}">
+<head>
+    <title>About Smart Contact Manager</title>
+    <meta name="description" content="Learn about Smart Contact Manager - a full-stack web application for efficient contact management">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+<div id="content" class="min-h-screen">
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-r from-blue-700 to-indigo-900 text-white py-24">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-10 md:mb-0">
+                    <h1 class="text-4xl md:text-5xl font-bold mb-6 leading-tight">About Smart Contact Manager</h1>
+                    <p class="text-xl text-blue-100 mb-8">A powerful full-stack solution for managing your professional and personal connections efficiently and securely.</p>
+                </div>
+                <div class="md:w-1/2 flex justify-center">
+                    <div class="bg-white p-2 rounded-lg shadow-xl">
+                        <img src="/api/placeholder/500/300" alt="Smart Contact Manager Dashboard" class="rounded">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Story Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="max-w-4xl mx-auto">
+                <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">Our Story</h2>
+                <div class="flex flex-col md:flex-row items-center">
+                    <div class="md:w-1/3 mb-8 md:mb-0">
+                        <div class="bg-blue-100 rounded-full p-8 inline-block">
+                            <i class="fas fa-lightbulb text-6xl text-blue-600"></i>
+                        </div>
+                    </div>
+                    <div class="md:w-2/3 md:pl-12">
+                        <p class="text-gray-700 text-lg mb-4">Smart Contact Manager was born out of a common challenge faced by professionals and businesses: efficiently managing growing networks of contacts across platforms.</p>
+                        <p class="text-gray-700 text-lg mb-4">We set out to create a comprehensive solution that would simplify contact management while providing enterprise-grade security and a delightful user experience.</p>
+                        <p class="text-gray-700 text-lg">Today, SCM stands as a testament to modern full-stack development, bringing together the power of Spring Boot, secure cloud storage, and responsive design to solve real-world organizational challenges.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Purpose & Problem Solved -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">Purpose & Problem Solved</h2>
+            <div class="max-w-4xl mx-auto bg-white rounded-xl shadow-lg overflow-hidden">
+                <div class="flex flex-col md:flex-row">
+                    <div class="md:w-1/2 bg-blue-700 text-white p-10">
+                        <h3 class="text-2xl font-bold mb-6">The Challenge</h3>
+                        <ul class="space-y-4">
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle mt-1 mr-3 text-blue-300"></i>
+                                <span>Fragmented contacts across multiple platforms</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle mt-1 mr-3 text-blue-300"></i>
+                                <span>Security concerns with sensitive contact data</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle mt-1 mr-3 text-blue-300"></i>
+                                <span>Inefficient organization and categorization</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle mt-1 mr-3 text-blue-300"></i>
+                                <span>Difficulty in maintaining up-to-date information</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle mt-1 mr-3 text-blue-300"></i>
+                                <span>Limited collaborative capabilities</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="md:w-1/2 p-10">
+                        <h3 class="text-2xl font-bold mb-6 text-gray-800">Our Solution</h3>
+                        <ul class="space-y-4 text-gray-700">
+                            <li class="flex items-start">
+                                <i class="fas fa-lightbulb mt-1 mr-3 text-yellow-500"></i>
+                                <span>Centralized platform with intuitive dashboard</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-lightbulb mt-1 mr-3 text-yellow-500"></i>
+                                <span>Enterprise-grade security with Spring Security</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-lightbulb mt-1 mr-3 text-yellow-500"></i>
+                                <span>Advanced search and filter capabilities</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-lightbulb mt-1 mr-3 text-yellow-500"></i>
+                                <span>Cloud storage integration for profile pictures</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-lightbulb mt-1 mr-3 text-yellow-500"></i>
+                                <span>Role-based access control for teams</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Key Features -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-16 text-gray-800">Key Features</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white rounded-xl shadow p-8 border-t-4 border-blue-600 hover:shadow-lg transition duration-300">
+                    <div class="bg-blue-100 rounded-full w-16 h-16 flex items-center justify-center mb-6">
+                        <i class="fas fa-lock text-blue-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4 text-gray-800">User Authentication</h3>
+                    <p class="text-gray-600 mb-4">Secure login using Spring Security with OAuth integration for Google and GitHub authentication.</p>
+                    <div class="flex flex-wrap gap-2 mt-4">
+                        <span class="px-3 py-1 bg-blue-100 text-blue-800 text-xs rounded-full">Spring Security</span>
+                        <span class="px-3 py-1 bg-blue-100 text-blue-800 text-xs rounded-full">OAuth</span>
+                        <span class="px-3 py-1 bg-blue-100 text-blue-800 text-xs rounded-full">Google Login</span>
+                    </div>
+                </div>
+                <div class="bg-white rounded-xl shadow p-8 border-t-4 border-blue-600 hover:shadow-lg transition duration-300">
+                    <div class="bg-blue-100 rounded-full w-16 h-16 flex items-center justify-center mb-6">
+                        <i class="fas fa-address-card text-blue-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4 text-gray-800">Contact Management</h3>
+                    <p class="text-gray-600 mb-4">Comprehensive tools to add, update, delete, and search contacts with an intuitive user interface.</p>
+                    <div class="flex flex-wrap gap-2 mt-4">
+                        <span class="px-3 py-1 bg-blue-100 text-blue-800 text-xs rounded-full">CRUD Operations</span>
+                        <span class="px-3 py-1 bg-blue-100 text-blue-800 text-xs rounded-full">Search</span>
+                        <span class="px-3 py-1 bg-blue-100 text-blue-800 text-xs rounded-full">Categorization</span>
+                    </div>
+                </div>
+                <div class="bg-white rounded-xl shadow p-8 border-t-4 border-blue-600 hover:shadow-lg transition duration-300">
+                    <div class="bg-blue-100 rounded-full w-16 h-16 flex items-center justify-center mb-6">
+                        <i class="fas fa-cloud text-blue-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4 text-gray-800">Cloud Storage</h3>
+                    <p class="text-gray-600 mb-4">Upload and store profile pictures using Cloudinary integration for secure and efficient storage.</p>
+                    <div class="flex flex-wrap gap-2 mt-4">
+                        <span class="px-3 py-1 bg-blue-100 text-blue-800 text-xs rounded-full">Cloudinary</span>
+                        <span class="px-3 py-1 bg-blue-100 text-blue-800 text-xs rounded-full">Image Upload</span>
+                        <span class="px-3 py-1 bg-blue-100 text-blue-800 text-xs rounded-full">Cloud Storage</span>
+                    </div>
+                </div>
+                <div class="bg-white rounded-xl shadow p-8 border-t-4 border-blue-600 hover:shadow-lg transition duration-300">
+                    <div class="bg-blue-100 rounded-full w-16 h-16 flex items-center justify-center mb-6">
+                        <i class="fas fa-file-export text-blue-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4 text-gray-800">Data Export</h3>
+                    <p class="text-gray-600 mb-4">Export contacts in Excel format for offline use, backup, or sharing with team members.</p>
+                    <div class="flex flex-wrap gap-2 mt-4">
+                        <span class="px-3 py-1 bg-blue-100 text-blue-800 text-xs rounded-full">Excel Format</span>
+                        <span class="px-3 py-1 bg-blue-100 text-blue-800 text-xs rounded-full">API Integration</span>
+                        <span class="px-3 py-1 bg-blue-100 text-blue-800 text-xs rounded-full">Data Portability</span>
+                    </div>
+                </div>
+                <div class="bg-white rounded-xl shadow p-8 border-t-4 border-blue-600 hover:shadow-lg transition duration-300">
+                    <div class="bg-blue-100 rounded-full w-16 h-16 flex items-center justify-center mb-6">
+                        <i class="fas fa-envelope text-blue-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4 text-gray-800">Email Integration</h3>
+                    <p class="text-gray-600 mb-4">Compose and send emails directly from the application for seamless communication.</p>
+                    <div class="flex flex-wrap gap-2 mt-4">
+                        <span class="px-3 py-1 bg-blue-100 text-blue-800 text-xs rounded-full">SMTP</span>
+                        <span class="px-3 py-1 bg-blue-100 text-blue-800 text-xs rounded-full">Email Services</span>
+                        <span class="px-3 py-1 bg-blue-100 text-blue-800 text-xs rounded-full">Communication</span>
+                    </div>
+                </div>
+                <div class="bg-white rounded-xl shadow p-8 border-t-4 border-blue-600 hover:shadow-lg transition duration-300">
+                    <div class="bg-blue-100 rounded-full w-16 h-16 flex items-center justify-center mb-6">
+                        <i class="fas fa-moon text-blue-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4 text-gray-800">Theme Customization</h3>
+                    <p class="text-gray-600 mb-4">Support for dark mode and light mode to enhance user experience and reduce eye strain.</p>
+                    <div class="flex flex-wrap gap-2 mt-4">
+                        <span class="px-3 py-1 bg-blue-100 text-blue-800 text-xs rounded-full">Dark Mode</span>
+                        <span class="px-3 py-1 bg-blue-100 text-blue-800 text-xs rounded-full">Light Mode</span>
+                        <span class="px-3 py-1 bg-blue-100 text-blue-800 text-xs rounded-full">User Preference</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technology Stack -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-16 text-gray-800">Technology Stack</h2>
+            <div class="max-w-4xl mx-auto">
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+                    <div class="p-8">
+                        <h3 class="text-2xl font-bold mb-8 text-center text-gray-800">Backend</h3>
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                            <div class="bg-gray-50 p-6 rounded-lg text-center">
+                                <img src="/api/placeholder/80/80" alt="Spring Boot" class="mx-auto mb-4">
+                                <h4 class="font-bold">Spring Boot</h4>
+                                <p class="text-gray-600 text-sm">Business logic & REST APIs</p>
+                            </div>
+                            <div class="bg-gray-50 p-6 rounded-lg text-center">
+                                <img src="/api/placeholder/80/80" alt="Spring Data JPA" class="mx-auto mb-4">
+                                <h4 class="font-bold">Spring Data JPA</h4>
+                                <p class="text-gray-600 text-sm">Database connectivity with MySQL/PostgreSQL</p>
+                            </div>
+                            <div class="bg-gray-50 p-6 rounded-lg text-center">
+                                <img src="/api/placeholder/80/80" alt="Spring Security" class="mx-auto mb-4">
+                                <h4 class="font-bold">Spring Security</h4>
+                                <p class="text-gray-600 text-sm">Authentication and authorization</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="border-t border-gray-100"></div>
+                    <div class="p-8">
+                        <h3 class="text-2xl font-bold mb-8 text-center text-gray-800">Frontend</h3>
+                        <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+                            <div class="bg-gray-50 p-6 rounded-lg text-center">
+                                <img src="/api/placeholder/80/80" alt="HTML5" class="mx-auto mb-4">
+                                <h4 class="font-bold">HTML5</h4>
+                                <p class="text-gray-600 text-sm">Structure and content</p>
+                            </div>
+                            <div class="bg-gray-50 p-6 rounded-lg text-center">
+                                <img src="/api/placeholder/80/80" alt="Thymeleaf" class="mx-auto mb-4">
+                                <h4 class="font-bold">Thymeleaf</h4>
+                                <p class="text-gray-600 text-sm">Template engine for dynamic pages</p>
+                            </div>
+                            <div class="bg-gray-50 p-6 rounded-lg text-center">
+                                <img src="/api/placeholder/80/80" alt="Tailwind CSS" class="mx-auto mb-4">
+                                <h4 class="font-bold">Tailwind CSS</h4>
+                                <p class="text-gray-600 text-sm">Responsive UI design</p>
+                            </div>
+                            <div class="bg-gray-50 p-6 rounded-lg text-center">
+                                <img src="/api/placeholder/80/80" alt="JavaScript" class="mx-auto mb-4">
+                                <h4 class="font-bold">JavaScript</h4>
+                                <p class="text-gray-600 text-sm">Interactive functionality</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="border-t border-gray-100"></div>
+                    <div class="p-8">
+                        <h3 class="text-2xl font-bold mb-8 text-center text-gray-800">Other Integrations</h3>
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                            <div class="bg-gray-50 p-6 rounded-lg text-center">
+                                <img src="/api/placeholder/80/80" alt="OAuth" class="mx-auto mb-4">
+                                <h4 class="font-bold">OAuth</h4>
+                                <p class="text-gray-600 text-sm">Google Authentication</p>
+                            </div>
+                            <div class="bg-gray-50 p-6 rounded-lg text-center">
+                                <img src="/api/placeholder/80/80" alt="Cloudinary" class="mx-auto mb-4">
+                                <h4 class="font-bold">Cloudinary</h4>
+                                <p class="text-gray-600 text-sm">Profile picture storage</p>
+                            </div>
+                            <div class="bg-gray-50 p-6 rounded-lg text-center">
+                                <img src="/api/placeholder/80/80" alt="Excel Export" class="mx-auto mb-4">
+                                <h4 class="font-bold">Excel Export API</h4>
+                                <p class="text-gray-600 text-sm">Export contact lists</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Future Enhancements -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">Future Enhancements</h2>
+            <div class="max-w-4xl mx-auto">
+                <div class="bg-gradient-to-r from-blue-700 to-indigo-900 text-white p-10 rounded-xl">
+                    <h3 class="text-2xl font-bold mb-6 text-center">Expansion Plan</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <div class="bg-white bg-opacity-10 p-6 rounded-lg backdrop-filter backdrop-blur-sm">
+                            <div class="flex items-start">
+                                <div class="bg-blue-500 p-3 rounded-full mr-4">
+                                    <i class="fas fa-code text-white"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-xl mb-2">ASP.NET MVC & C#</h4>
+                                    <p class="text-blue-100">Adding a .NET-based backend for better flexibility and technology diversity.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bg-white bg-opacity-10 p-6 rounded-lg backdrop-filter backdrop-blur-sm">
+                            <div class="flex items-start">
+                                <div class="bg-blue-500 p-3 rounded-full mr-4">
+                                    <i class="fab fa-react text-white"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-xl mb-2">MERN Stack</h4>
+                                    <p class="text-blue-100">Building a separate React/Node.js version for modern web application architecture.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bg-white bg-opacity-10 p-6 rounded-lg backdrop-filter backdrop-blur-sm">
+                            <div class="flex items-start">
+                                <div class="bg-blue-500 p-3 rounded-full mr-4">
+                                    <i class="fas fa-brain text-white"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-xl mb-2">AI/ML Integration</h4>
+                                    <p class="text-blue-100">AI-powered contact suggestions & analytics for intelligent networking.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bg-white bg-opacity-10 p-6 rounded-lg backdrop-filter backdrop-blur-sm">
+                            <div class="flex items-start">
+                                <div class="bg-blue-500 p-3 rounded-full mr-4">
+                                    <i class="fas fa-shield-alt text-white"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-xl mb-2">Advanced Security</h4>
+                                    <p class="text-blue-100">Multi-Factor Authentication (MFA) and enhanced encryption protocols.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why SCM Stands Out -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">Why SCM Stands Out</h2>
+            <div class="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bg-white p-8 rounded-xl shadow hover:shadow-lg transition duration-300">
+                    <div class="flex items-center mb-6">
+                        <div class="bg-blue-100 p-3 rounded-full mr-4">
+                            <i class="fas fa-laptop-code text-blue-600 text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800">Full-Stack Expertise</h3>
+                    </div>
+                    <p class="text-gray-600">Demonstrates comprehensive knowledge of Spring Boot, MySQL, OAuth, and REST APIs in a production-ready application.</p>
+                </div>
+                <div class="bg-white p-8 rounded-xl shadow hover:shadow-lg transition duration-300">
+                    <div class="flex items-center mb-6">
+                        <div class="bg-blue-100 p-3 rounded-full mr-4">
+                            <i class="fas fa-industry text-blue-600 text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800">Industry-Relevant Features</h3>
+                    </div>
+                    <p class="text-gray-600">Incorporates modern solutions like cloud storage, email integration, and responsive design that businesses actually need.</p>
+                </div>
+                <div class="bg-white p-8 rounded-xl shadow hover:shadow-lg transition duration-300">
+                    <div class="flex items-center mb-6">
+                        <div class="bg-blue-100 p-3 rounded-full mr-4">
+                            <i class="fas fa-expand-arrows-alt text-blue-600 text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800">Scalable & Secure</h3>
+                    </div>
+                    <p class="text-gray-600">Built with enterprise-level security considerations and cloud services that allow for efficient scaling as needs grow.</p>
+                </div>
+                <div class="bg-white p-8 rounded-xl shadow hover:shadow-lg transition duration-300">
+                    <div class="flex items-center mb-6">
+                        <div class="bg-blue-100 p-3 rounded-full mr-4">
+                            <i class="fas fa-user-tie text-blue-600 text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800">Recruiter-Friendly</h3>
+                    </div>
+                    <p class="text-gray-600">Showcases backend, frontend, and cloud expertise in a single coherent project that demonstrates professional capabilities.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-16 text-gray-800">Meet the Team</h2>
+            <div class="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white rounded-xl shadow p-8 text-center hover:shadow-lg transition duration-300">
+                    <img src="/api/placeholder/120/120" alt="Team Member" class="rounded-full mx-auto mb-4">
+                    <h3 class="text-xl font-bold mb-2">John Doe</h3>
+                    <p class="text-blue-600 mb-4">Lead Developer</p>
+                    <p class="text-gray-600 mb-6">Full-stack developer with expertise in Spring Boot and database design.</p>
+                    <div class="flex justify-center space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-blue-600">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-blue-600">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-blue-600">
+                            <i class="fas fa-globe"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="bg-white rounded-xl shadow p-8 text-center hover:shadow-lg transition duration-300">
+                    <img src="/api/placeholder/120/120" alt="Team Member" class="rounded-full mx-auto mb-4">
+                    <h3 class="text-xl font-bold mb-2">Jane Smith</h3>
+                    <p class="text-blue-600 mb-4">UI/UX Designer</p>
+                    <p class="text-gray-600 mb-6">Creative designer with a passion for creating intuitive and beautiful user interfaces.</p>
+                    <div class="flex justify-center space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-blue-600">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-blue-600">
+                            <i class="fab fa-dribbble"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-blue-600">
+                            <i class="fas fa-globe"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="bg-white rounded-xl shadow p-8 text-center hover:shadow-lg transition duration-300">
+                    <img src="/api/placeholder/120/120" alt="Team Member" class="rounded-full mx-auto mb-4">
+                    <h3 class="text-xl font-bold mb-2">Mike Johnson</h3>
+                    <p class="text-blue-600 mb-4">Cloud Architect</p>
+                    <p class="text-gray-600 mb-6">Expert in cloud technologies and security implementations for web applications.</p>
+                    <div class="flex justify-center space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-blue-600">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-blue-600">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-blue-600">
+                            <i class="fas fa-globe"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="py-16 bg-blue-700 text-white">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-3xl font-bold mb-8">Get in Touch</h2>
+            <p class="text-xl mb-8 max-w-2xl mx-auto">Have questions about Smart Contact Manager? We'd love to hear from you!</p>
+            <a href="/contact" class="inline-block bg-white text-blue-700 px-8 py-3 rounded-lg font-semibold hover:bg-blue-100 transition duration-300">Contact Us</a>

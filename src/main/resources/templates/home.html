@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html
+        lang="en"
+        th:replace="~{base :: parent(~{::#content},~{::title},~{::script})}"
+>
+<head>
+  <title>Contact Manager - Organize Your Network</title>
+  <meta name="description" content="Manage all your contacts securely in one place with our intuitive contact management solution.">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+</head>
+<body>
+<div id="content" class="border">
+  <!-- Hero Section -->
+  <section class="bg-gradient-to-r from-blue-700 to-indigo-900 text-white py-24 relative overflow-hidden">
+    <div class="absolute inset-0 opacity-10">
+      <div class="absolute top-0 left-0 w-full h-full bg-pattern-dots"></div>
+    </div>
+    <div class="container mx-auto px-6 flex flex-col md:flex-row items-center justify-between relative z-10">
+      <div class="md:w-1/2 text-center md:text-left mb-12 md:mb-0 animate__animated animate__fadeInLeft">
+        <h1 class="text-5xl font-bold mb-4 leading-tight">Simplify Your <span class="text-yellow-300">Contact Management</span></h1>
+        <p class="text-xl mb-8 text-blue-100">All your connections in one secure, easy-to-use platform. Never lose an important contact again.</p>
+        <div class="flex flex-col sm:flex-row justify-center md:justify-start gap-4">
+          <a href="#" class="bg-yellow-400 text-gray-900 px-8 py-3 rounded-lg font-semibold hover:bg-yellow-300 transition duration-300 shadow-lg">Get Started Free</a>
+          <a href="#features" class="bg-transparent border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-blue-900 transition duration-300">Learn More</a>
+        </div>
+      </div>
+      <div class="md:w-1/2 animate__animated animate__fadeInRight">
+        <img src="/api/placeholder/600/400" alt="Contact Manager Dashboard" class="rounded-lg shadow-2xl">
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats Section -->
+  <section class="py-8 bg-gray-50">
+    <div class="container mx-auto px-6">
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+        <div class="p-4">
+          <p class="text-3xl font-bold text-blue-700">10K+</p>
+          <p class="text-gray-600">Active Users</p>
+        </div>
+        <div class="p-4">
+          <p class="text-3xl font-bold text-blue-700">3M+</p>
+          <p class="text-gray-600">Contacts Managed</p>
+        </div>
+        <div class="p-4">
+          <p class="text-3xl font-bold text-blue-700">99.9%</p>
+          <p class="text-gray-600">Uptime</p>
+        </div>
+        <div class="p-4">
+          <p class="text-3xl font-bold text-blue-700">4.8/5</p>
+          <p class="text-gray-600">User Rating</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section id="features" class="py-20 bg-white">
+    <div class="container mx-auto px-6">
+      <div class="text-center max-w-2xl mx-auto mb-16">
+        <h2 class="text-4xl font-bold mb-4 text-gray-800">Powerful Features</h2>
+        <p class="text-xl text-gray-600">Everything you need to manage your contacts efficiently</p>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+        <div class="bg-white rounded-xl shadow-lg p-8 border border-gray-100 hover:shadow-xl transition duration-300 transform hover:-translate-y-2">
+          <div class="text-blue-600 mb-4">
+            <i class="fas fa-address-book text-4xl"></i>
+          </div>
+          <h3 class="text-2xl font-semibold mb-3 text-gray-800">Smart Organization</h3>
+          <p class="text-gray-600">Categorize, tag, and group your contacts with custom fields and powerful search capabilities.</p>
+          <a href="#" class="inline-block mt-4 text-blue-600 font-medium hover:text-blue-800">Learn more <i class="fas fa-arrow-right ml-1"></i></a>
+        </div>
+        <div class="bg-white rounded-xl shadow-lg p-8 border border-gray-100 hover:shadow-xl transition duration-300 transform hover:-translate-y-2">
+          <div class="text-blue-600 mb-4">
+            <i class="fas fa-shield-alt text-4xl"></i>
+          </div>
+          <h3 class="text-2xl font-semibold mb-3 text-gray-800">Enterprise Security</h3>
+          <p class="text-gray-600">End-to-end encryption, two-factor authentication, and regular backups keep your data protected.</p>
+          <a href="#" class="inline-block mt-4 text-blue-600 font-medium hover:text-blue-800">Learn more <i class="fas fa-arrow-right ml-1"></i></a>
+        </div>
+        <div class="bg-white rounded-xl shadow-lg p-8 border border-gray-100 hover:shadow-xl transition duration-300 transform hover:-translate-y-2">
+          <div class="text-blue-600 mb-4">
+            <i class="fas fa-sync text-4xl"></i>
+          </div>
+          <h3 class="text-2xl font-semibold mb-3 text-gray-800">Seamless Sync</h3>
+          <p class="text-gray-600">Automatically sync contacts across all your devices and with popular third-party services.</p>
+          <a href="#" class="inline-block mt-4 text-blue-600 font-medium hover:text-blue-800">Learn more <i class="fas fa-arrow-right ml-1"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- How It Works Section -->
+  <section class="py-20 bg-gray-50">
+    <div class="container mx-auto px-6">
+      <div class="text-center max-w-2xl mx-auto mb-16">
+        <h2 class="text-4xl font-bold mb-4 text-gray-800">How It Works</h2>
+        <p class="text-xl text-gray-600">Get started in three simple steps</p>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+        <div class="text-center">
+          <div class="bg-blue-100 text-blue-700 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-6 text-2xl font-bold">1</div>
+          <h3 class="text-xl font-semibold mb-3">Create an Account</h3>
+          <p class="text-gray-600">Sign up for free and set up your personal profile in seconds.</p>
+        </div>
+        <div class="text-center">
+          <div class="bg-blue-100 text-blue-700 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-6 text-2xl font-bold">2</div>
+          <h3 class="text-xl font-semibold mb-3">Import Contacts</h3>
+          <p class="text-gray-600">Import from your email, social media, or upload a CSV file.</p>
+        </div>
+        <div class="text-center">
+          <div class="bg-blue-100 text-blue-700 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-6 text-2xl font-bold">3</div>
+          <h3 class="text-xl font-semibold mb-3">Start Organizing</h3>
+          <p class="text-gray-600">Group, tag, and manage your contacts your way.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section class="py-20 bg-white">
+    <div class="container mx-auto px-6">
+      <div class="text-center max-w-2xl mx-auto mb-16">
+        <h2 class="text-4xl font-bold mb-4 text-gray-800">What Our Users Say</h2>
+        <p class="text-xl text-gray-600">Trusted by professionals worldwide</p>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="bg-white rounded-xl shadow-lg p-8 border border-gray-100">
+          <div class="flex items-center mb-4">
+            <div class="text-yellow-400">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+          </div>
+          <p class="text-gray-600 mb-6">"Contact Manager has transformed how I manage my network. The intelligent categorization and reminder features have made maintaining relationships so much easier."</p>
+          <div class="flex items-center">
+            <div class="mr-4">
+              <img src="/api/placeholder/40/40" alt="User" class="rounded-full">
+            </div>
+            <div>
+              <h4 class="font-semibold">Michael Torres</h4>
+              <p class="text-gray-500 text-sm">Sales Director</p>
+            </div>
+          </div>
+        </div>
+        <div class="bg-white rounded-xl shadow-lg p-8 border border-gray-100">
+          <div class="flex items-center mb-4">
+            <div class="text-yellow-400">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+          </div>
+          <p class="text-gray-600 mb-6">"As a small business owner, keeping track of clients and leads was always challenging. This platform has streamlined everything and improved our customer relationships."</p>
+          <div class="flex items-center">
+            <div class="mr-4">
+              <img src="/api/placeholder/40/40" alt="User" class="rounded-full">
+            </div>
+            <div>
+              <h4 class="font-semibold">Sarah Johnson</h4>
+              <p class="text-gray-500 text-sm">Business Owner</p>
+            </div>
+          </div>
+        </div>
+        <div class="bg-white rounded-xl shadow-lg p-8 border border-gray-100">
+          <div class="flex items-center mb-4">
+            <div class="text-yellow-400">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+          </div>
+          <p class="text-gray-600 mb-6">"The cross-platform sync is amazing. I can access and update my contacts whether I'm at my desk or on the go. The security features also give me great peace of mind."</p>
+          <div class="flex items-center">
+            <div class="mr-4">
+              <img src="/api/placeholder/40/40" alt="User" class="rounded-full">
+            </div>
+            <div>
+              <h4 class="font-semibold">David Chen</h4>
+              <p class="text-gray-500 text-sm">IT Consultant</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing Section -->
+  <section class="py-20 bg-gray-50">
+    <div class="container mx-auto px-6">
+      <div class="text-center max-w-2xl mx-auto mb-16">
+        <h2 class="text-4xl font-bold mb-4 text-gray-800">Simple, Transparent Pricing</h2>
+        <p class="text-xl text-gray-600">Choose the plan that works for your needs</p>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+          <div class="p-8">
+            <h3 class="text-2xl font-semibold mb-2">Free</h3>
+            <p class="text-gray-500 mb-6">Perfect for getting started</p>
+            <h4 class="text-4xl font-bold mb-6">$0<span class="text-lg text-gray-500 font-normal">/month</span></h4>
+            <ul class="mb-6">
+              <li class="flex items-center mb-3">
+                <i class="fas fa-check text-green-500 mr-2"></i>
+                <span class="text-gray-600">Up to 100 contacts</span>
+              </li>
+              <li class="flex items-center mb-3">
+                <i class="fas fa-check text-green-500 mr-2"></i>
+                <span class="text-gray-600">Basic organization tools</span>
+              </li>
+              <li class="flex items-center mb-3">
+                <i class="fas fa-check text-green-500 mr-2"></i>
+                <span class="text-gray-600">Email support</span>
+              </li>
+            </ul>
+          </div>
+          <div class="px-8 pb-8">
+            <a href="#" class="block bg-blue-100 text-blue-700 text-center py-3 rounded-lg font-semibold hover:bg-blue-200 transition duration-300">Get Started</a>
+          </div>
+        </div>
+        <div class="bg-white rounded-xl shadow-xl overflow-hidden border-2 border-blue-600 transform scale-105">
+          <div class="bg-blue-600 text-center py-2">
+            <span class="text-white text-sm font-semibold">Most Popular</span>
+          </div>
+          <div class="p-8">
+            <h3 class="text-2xl font-semibold mb-2">Professional</h3>
+            <p class="text-gray-500 mb-6">For individuals and small teams</p>
+            <h4 class="text-4xl font-bold mb-6">$9<span class="text-lg text-gray-500 font-normal">/month</span></h4>
+            <ul class="mb-6">
+              <li class="flex items-center mb-3">
+                <i class="fas fa-check text-green-500 mr-2"></i>
+                <span class="text-gray-600">Up to 5,000 contacts</span>
+              </li>
+              <li class="flex items-center mb-3">
+                <i class="fas fa-check text-green-500 mr-2"></i>
+                <span class="text-gray-600">Advanced organization tools</span>
+              </li>
+              <li class="flex items-center mb-3">
+                <i class="fas fa-check text-green-500 mr-2"></i>
+                <span class="text-gray-600">Integration with 10+ services</span>
+              </li>
+              <li class="flex items-center mb-3">
+                <i class="fas fa-check text-green-500 mr-2"></i>
+                <span class="text-gray-600">Priority support</span>
+              </li>
+            </ul>
+          </div>
+          <div class="px-8 pb-8">
+            <a href="#" class="block bg-blue-600 text-white text-center py-3 rounded-lg font-semibold hover:bg-blue-700 transition duration-300">Get Started</a>
+          </div>
+        </div>
+        <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+          <div class="p-8">
+            <h3 class="text-2xl font-semibold mb-2">Enterprise</h3>
+            <p class="text-gray-500 mb-6">For large teams and organizations</p>
+            <h4 class="text-4xl font-bold mb-6">$29<span class="text-lg text-gray-500 font-normal">/month</span></h4>
+            <ul class="mb-6">
+              <li class="flex items-center mb-3">
+                <i class="fas fa-check text-green-500 mr-2"></i>
+                <span class="text-gray-600">Unlimited contacts</span>
+              </li>
+              <li class="flex items-center mb-3">
+                <i class="fas fa-check text-green-500 mr-2"></i>
+                <span class="text-gray-600">Team collaboration tools</span>
+              </li>
+              <li class="flex items-center mb-3">
+                <i class="fas fa-check text-green-500 mr-2"></i>
+                <span class="text-gray-600">Advanced security features</span>
+              </li>
+              <li class="flex items-center mb-3">
+                <i class="fas fa-check text-green-500 mr-2"></i>
+                <span class="text-gray-600">API access</span>
+              </li>
+              <li class="flex items-center mb-3">
+                <i class="fas fa-check text-green-500 mr-2"></i>
+                <span class="text-gray-600">Dedicated account manager</span>
+              </li>
+            </ul>
+          </div>
+          <div class="px-8 pb-8">
+            <a href="#" class="block bg-blue-100 text-blue-700 text-center py-3 rounded-lg font-semibold hover:bg-blue-200 transition duration-300">Contact Sales</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="py-20 bg-gradient-to-r from-blue-700 to-indigo-900 text-white">
+    <div class="container mx-auto px-6 text-center">
+      <h2 class="text-4xl font-bold mb-4">Start Managing Your Contacts Today</h2>
+      <p class="text-xl mb-8 max-w-2xl mx-auto">Join thousands of professionals who trust Contact Manager for their networking needs.</p>
+      <div class="flex flex-col sm:flex-row justify-center gap-4">
+        <a href="#" class="bg-yellow-400 text-gray-900 px-8 py-3 rounded-lg font-semibold hover:bg-yellow-300 transition duration-300 shadow-lg">Try For Free</a>
+        <a href="#" class="bg-transparent border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-blue-900 transition duration-300">Schedule Demo</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="py-20 bg-white">
+    <div class="container mx-auto px-6">
+      <div class="text-center max-w-2xl mx-auto mb-16">
+        <h2 class="text-4xl font-bold mb-4 text-gray-800">Frequently Asked Questions</h2>
+        <p class="text-xl text-gray-600">Find answers to common questions</p>
+      </div>
+      <div class="max-w-3xl mx-auto">
+        <div class="mb-6 border-b border-gray-200 pb-6">
+          <h3 class="text-xl font-semibold mb-2">How secure is my contact data?</h3>
+          <p class="text-gray-600">We use bank-level encryption and security practices to ensure your data is completely secure. Your information is encrypted both in transit and at rest, and we perform regular security audits.</p>
+        </div>
+        <div class="mb-6 border-b border-gray-200 pb-6">
+          <h3 class="text-xl font-semibold mb-2">Can I import contacts from other services?</h3>
+          <p class="text-gray-600">Yes! You can import contacts from Gmail, Outlook, CSV files, and many other popular services with just a few clicks.</p>
+        </div>
+        <div class="mb-6 border-b border-gray-200 pb-6">
+          <h3 class="text-xl font-semibold mb-2">Is there a mobile app available?</h3>
+          <p class="text-gray-600">Absolutely. We have native apps for iOS and Android that sync seamlessly with the web application, allowing you to access your contacts on the go.</p>
+        </div>
+        <div class="mb-6 border-b border-gray-200 pb-6">
+          <h3 class="text-xl font-semibold mb-2">Can I upgrade or downgrade my plan later?</h3>
+          <p class="text-gray-600">Yes, you can change your plan at any time. When upgrading, you'll only pay the prorated difference for the remainder of your billing cycle.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="py-20 bg-gray-50">
+    <div class="container mx-auto px-6">
+      <div class="max-w-4xl mx-auto bg-white rounded-xl shadow-lg overflow-hidden">
+        <div class="flex flex-col md:flex-row">
+          <div class="md:w-1/2 bg-blue-700 text-white p-10">
+            <h2 class="text-3xl font-bold mb-6">Get in Touch</h2>
+            <p class="mb-6">Have questions or feedback? We'd love to hear from you.</p>
+            <div class="mb-6">
+              <p class="mb-2 flex items-center">
+                <i class="fas fa-map-marker-alt mr-3"></i>
+                <span>123 Contact Street, Digital City</span>
+              </p>
+              <p class="mb-2 flex items-center">
+                <i class="fas fa-envelope mr-3"></i>
+                <span>support@contactmanager.com</span>
+              </p>
+              <p class="mb-2 flex items-center">
+                <i class="fas fa-phone mr-3"></i>
+                <span>+1 (555) 123-4567</span>
+              </p>
+            </div>
+            <div class="flex space-x-4">
+              <a href="#" class="text-white hover:text-yellow-300">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a href="#" class="text-white hover:text-yellow-300">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a href="#" class="text-white hover:text-yellow-300">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+              <a href="#" class="text-white hover:text-yellow-300">
+                <i class="fab fa-instagram"></i>
+              </a>
+            </div>
+          </div>
+          <div class="md:w-1/2 p-10">
+            <form>
+              <div class="mb-4">
+                <label for="name" class="block text-gray-700 text-sm font-medium mb-2">Name</label>
+                <input type="text" id="name" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-blue-500 focus:border-blue-500">
+              </div>
+              <div class="mb-4">
+                <label for="email" class="block text-gray-700 text-sm font-medium mb-2">Email</label>
+                <input type="email" id="email" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-blue-500 focus:border-blue-500">
+              </div>
+              <div class="mb-6">
+                <label for="message" class="block text-gray-700 text-sm font-medium mb-2">Message</label>
+                <textarea id="message" rows="4" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-blue-500 focus:border-blue-500"></textarea>
+              </div>
+              <button type="submit" class="w-full bg-blue-600 text-white py-3 rounded-lg font-semibold hover:bg-blue-700 transition duration-300">Send Message</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-white pt-16 pb-8">
+    <div class="container mx-auto px-6">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
+        <div>
+          <h3 class="text-xl font-semibold mb-4">Contact Manager</h3>
+          <p class="text-gray-400 mb-4">The smart way to organize your professional and personal connections.</p>
+          <div class="flex space-x-4">
+            <a href="#" class="text-gray-400 hover:text-white">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="#" class="text-gray-400 hover:text-white">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a href="#" class="text-gray-400 hover:text-white">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="#" class="text-gray-400 hover:text-white">
+              <i class="fab fa-instagram"></i>
+            </a>
+          </div>
+        </div>
+        <div>
+          <h3 class="text-xl font-semibold mb-4">Product</h3>
+          <ul class="space-y-2">
+            <li><a href="#" class="text-gray-400 hover:text-white">Features</a></li>
+            <li><a href="#" class="text-gray-400 hover:text-white">Pricing</a></li>
+            <li><a href="#" class="text-gray-400 hover:text-white">Integrations</a></li>
+            <li><a href="#" class="text-gray-400 hover:text-white">FAQ</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="text-xl font-semibold mb-4">Company</h3>
+          <ul class="space-y-2">
+            <li><a href="#" class="text-gray-400 hover:text-white">About Us</a></li>
+            <li><a href="#" class="text-gray-400 hover:text-white">Blog</a></li>
+            <li><a href="#" class="text-gray-400 hover:text-white">Careers</a></li>
+            <li><a href="#" class="text-gray-400 hover:text-white">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="text-xl font-semibold mb-4">Legal</h3>
+          <ul class="space-y-2">
+            <li><a href="#" class="text-gray-400 hover:text-white">Privacy Policy</a></li>
+            <li><a href="#" class="text-gray-400 hover:text-white">Terms of Service</a></li>
+            <li><a href="#" class="text-gray-400 hover:text-white">Cookie Policy</a></li>
+            <li><a href="#" class="text-gray-400 hover:text-white">GDPR Compliance</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="border-t border-gray-800 pt-8">
+        <p class="text-gray-400 text-center">&copy; 2025 Contact Manager. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+</div>
+<script>
+  // Smooth scrolling for anchor links
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+      e.preventDefault();
+      document.querySelector(this.getAttribute('href')).scrollIntoView({
+        behavior: 'smooth'
+      });
+    });
+  });
+  
+  // Add animation on scroll
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('animate__fadeInUp');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, {
+    threshold: 0.1
+  });
+  
+  document.querySelectorAll('section h2').forEach(heading => {
+    observer.observe(heading);
+  });
+  
+  console.log("Enhanced Contact Manager Home Page Loaded");
+</script>
+</body>
+</html>
